@@ -55,5 +55,20 @@ public class ArrayListTest {
 			}
 			System.out.println("");
 		}
+		
+		System.out.println("\n\n");
+		
+		ArrayList<String> string = new ArrayList<String>();
+		
+		string.add("abcdefgh");
+		string.add("hijklmn");
+		//string.add("abcdefg");
+		//string.add("abcdefg");
+		
+		if (string.contains("abcdefgh")) {
+			System.out.println("find abcdefg");
+		}
+		
+		System.out.println("find : " + string.get(string.indexOf("abcdefgh")));
 	}
 }

@@ -30,5 +30,9 @@ public class HashMapTest {
 			System.out.println(entry.getKey() + " " + entry.getValue());
 		}
 		System.out.println("");
+		
+		if (test.containsKey("a")) {
+			System.out.println(test.get("a"));
+		}
 	}
 }
