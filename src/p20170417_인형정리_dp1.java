@@ -27,7 +27,7 @@ import java.util.Scanner;
 2 4
 
  */
-public class p20170417_ÀÎÇüÁ¤¸®_dp1 {
+public class p20170417_ì¸í˜•ì •ë¦¬_dp1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
