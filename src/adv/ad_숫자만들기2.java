@@ -2,7 +2,7 @@ package adv;
 
 import java.util.*;
 
-public class ad_¼ıÀÚ¸¸µé±â2 {
+public class ad_ìˆ«ìë§Œë“¤ê¸°2 {
 
 	static int go(int[] d, int start, int end) {
 		if (start == end)

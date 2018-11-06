@@ -35,7 +35,7 @@ TRXX0
 0XXX0
 
  */
-public class ad_´Ş±âÁö¹°ÀÚÀÌµ¿ {
+public class ad_ë‹¬ê¸°ì§€ë¬¼ìì´ë™{
 
 	public static int go(char[][] a, int[][] d, int n, int x, int y) {
 		return 0;
@@ -51,12 +51,12 @@ public class ad_´Ş±âÁö¹°ÀÚÀÌµ¿ {
 			char[][] a = new char[n][n];
 			int[][]d = new int[n][n];
 		
-			// ÀÔ·Â°ª ¹Ş±â
+			// ï¿½Ô·Â°ï¿½ ï¿½Ş±ï¿½
 			for(int i=0; i<n; i++) {
 				a[i] = sc.next().toCharArray();
 			}
 			
-			// ½ÃÀÛÁ¡ Ã£±â
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½
 			int x=0,y=0;
 			for(int i=0; i<n; i++) {
 				if (a[i][0] == 'T') {
@@ -65,7 +65,7 @@ public class ad_´Ş±âÁö¹°ÀÚÀÌµ¿ {
 				}
 			}
 			
-			// Å½»ö ½ÃÀÛ
+			// Å½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			int ans = go(a,d,n,x,y);
 			
 			System.out.println(ans);

@@ -2,7 +2,7 @@ package adv;
 
 import java.util.*;
 
-public class ad_µÎ¼ö·Î¸¸µé¼öÀÖ´Â¼ö {
+public class ad_ë‘ìˆ˜ë¡œë§Œë“¤ìˆ˜ìˆëŠ”ìˆ˜ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

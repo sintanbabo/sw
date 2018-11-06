@@ -2,7 +2,7 @@ package adv;
 
 import java.util.*;
 
-public class ad_È®·ü°è»ê2 {
+public class ad_í™•ë¥ ê³„ì‚°2 {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -15,7 +15,7 @@ public class ad_È®·ü°è»ê2 {
 			Node[] node = new Node[n+1];
 			float[] total_percent = new float[n+1];
 			
-			// ÀÔ·Â°ª ¹Þ±â
+			// ï¿½Ô·Â°ï¿½ ï¿½Þ±ï¿½
 			for(int i=1; i<=e; i++) {
 				node[i] = new Node();
 				node[i].from = sc.nextInt();
@@ -23,7 +23,7 @@ public class ad_È®·ü°è»ê2 {
 				node[i].percent = sc.nextFloat();
 			}
 			
-			// ½ÃÀÛÀ§Ä¡ ÁöÁ¤
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½
 			int start = 1;
 			total_percent[start] = 1;
 			

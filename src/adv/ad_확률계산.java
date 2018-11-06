@@ -17,7 +17,7 @@ class Node {
 	boolean used;
 }
 
-public class ad_È®·ü°è»ê {
+public class ad_í™•ë¥ ê³„ì‚° {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -31,7 +31,7 @@ public class ad_È®·ü°è»ê {
 			float[][] total_percent = new float[n+1][1000];
 			boolean[] used = new boolean[e+1];
 			
-			// ÀÔ·Â°ª ¹Þ±â
+			// ï¿½Ô·Â°ï¿½ ï¿½Þ±ï¿½
 			for(int i=1; i<=e; i++) {
 				node[i] = new Node();
 				node[i].from = sc.nextInt();
@@ -40,11 +40,11 @@ public class ad_È®·ü°è»ê {
 				node[i].used = false;
 			}
 			
-			// ½ÃÀÛÀ§Ä¡ ÁöÁ¤
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½
 			int finish = 1;
 			total_percent[1][0] = 1;
 			
-			// t(½Ã°£)¸¸Å­ ¹Ýº¹ÇØ¼­ ÀÌµ¿ÇÏ±â
+			// t(ï¿½Ã°ï¿½)ï¿½ï¿½Å­ ï¿½Ýºï¿½ï¿½Ø¼ï¿½ ï¿½Ìµï¿½ï¿½Ï±ï¿½
 			for(int i=0; i<t/10; i++) {
 				float max_percent = Float.MIN_VALUE;
 				for(int j=1; j<=e; j++) {

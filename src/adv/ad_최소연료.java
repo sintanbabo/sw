@@ -8,7 +8,7 @@ import java.util.*;
 10 40 20 30 30 10
 
  */
-public class ad_ÃÖ¼Ò¿¬·á {
+public class ad_ìµœì†Œì—°ë£Œ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -20,14 +20,14 @@ public class ad_ÃÖ¼Ò¿¬·á {
 			boolean[] used = new boolean[n+1];
 			Arrays.fill(used, false);
 			
-			// ÀÔ·Â°ª ¹Þ±â
+			// ï¿½Ô·Â°ï¿½ ï¿½Þ±ï¿½
 			for(int i=1; i<=n; i++) {
 				stone[i][0] = sc.nextInt();
 				total_high += stone[i][0];
 				stone[i][1] = sc.nextInt();
 			}
 			
-			// total_high¿¡¼­ 1¹øºÎÅÍ n¹ø±îÁö µ¹À» ³»·ÈÀ» ¶§ ÃÖ¼ÒÀÎ µ¹À» Ã£´Â´Ù.
+			// total_highï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½Â´ï¿½.
 			int index = 0;
 			int ans = 0;
 			while(total_high > 0) {

@@ -11,32 +11,33 @@ import java.util.*;
 1 5 2 5 3 5 4 5 1 4
 
  */
-public class ad_╣╣╫ц╦╕©╛╟Аго╢б╣╣╥н2 {
+public class ad_К▐└Л▀°К╔╪Л≈╟Й╡╟М∙≤К┼■К▐└К║°2
+{
 
-	// kruskal юл╥пю╦╥н node╟║ ╪╜╥н ╟╟ю╨ ╠в╥Л©║ ╪сго╢баЖ цё╢б╢ы.
-	// kruskalюг ╫цюш а║ю╨ node╟║ ©╛╟А╣г╬З╢Ь аЖа║╣И╥н ╨нем ╫цюшгя╢ы.
+	// kruskal О©╫л╥О©╫О©╫О©╫О©╫О©╫ nodeО©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫в╥Л©║ О©╫О©╫О©╫о╢О©╫О©╫О©╫ цёО©╫б╢О©╫.
+	// kruskalО©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ nodeО©╫О©╫ О©╫О©╫О©╫О©╫г╬О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫я╢О©╫.
 	static boolean ok(int[][] road, int v, int e, int node) {
 		boolean ans = true;
 		int[] groups = new int[v+1];
 		
-		// kruskal ╬к╟М╦╝аРю╦╥н ╠в╥Л╨╟╥н ╟╙ю╩ ╦егн
+		// kruskal О©╫к╟О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫в╥Л╨╟О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫
 		groups[node] = 10000000;
 		int group_cnt = 0;
 		for(int start=1; start<=v; start++) {
 			for(int end=1; end<=v; end++) {
 				if (road[start][end] == 1 && start != node && end != node) {
-					if (groups[start] == 0 && groups[end] == 0) {	// ╣я╢ы ╠в╥Л©║ ╬Ь╢б ╟Ф©Л
+					if (groups[start] == 0 && groups[end] == 0) {	// О©╫я╢О©╫ О©╫в╥Л©║ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫
 						group_cnt++;
 						groups[start] = group_cnt;
 						groups[end] = group_cnt;
 					}
-					else if (groups[start] > 0 && groups[end] == 0) { // ╫цюша║╦╦ ╠в╥Л©║ южю╩ ╟Ф©Л ╫цюш╠в╥Л ╟╙ю╩ Ё║╠в╥Л©║ ╨╧╩Г
+					else if (groups[start] > 0 && groups[end] == 0) { // О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫в╥Л©║ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫ О©╫О©╫О©╫ш╠в╥О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫в╥Л©║ О©╫О©╫О©╫О©╫
 						groups[end] = groups[start];
 					}
-					else if (groups[start] == 0 && groups[end] > 0) { // Ё║а║╦╦ ╠в╥Л©║ южю╩ ╟Ф©Л Ё║╠в╥Лю╩ ╫цюш╠в╥Л©║ ╨╧╩Г
+					else if (groups[start] == 0 && groups[end] > 0) { // О©╫О©╫О©╫О©╫О©╫О©╫ О©╫в╥Л©║ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫ О©╫О©╫О©╫в╥О©╫О©╫О©╫ О©╫О©╫О©╫ш╠в╥Л©║ О©╫О©╫О©╫О©╫
 						groups[start] = groups[end];
 					}
-					else if (groups[start] != groups[end]) {			// ╫цюша║юг ╠в╥Л╟З Ё║а║ ╠в╥Люл ╢ы╦╔ ╟Ф©Л, ╫цюша║юг ╠в╥Лю╦╥н Ё║а║ ╠в╥Л╟╙ю╩ ╢Кц╪
+					else if (groups[start] != groups[end]) {			// О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫в╥О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫в╥О©╫О©╫О©╫ О©╫ы╦О©╫ О©╫О©╫О©╫, О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫в╥О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫в╥Л╟╙О©╫О©╫ О©╫О©╫ц╪
 						for(int i=1; i<=v; i++) {
 							if (groups[i] == groups[end]) {
 								groups[i] = groups[start];
@@ -47,7 +48,7 @@ public class ad_╣╣╫ц╦╕©╛╟Аго╢б╣╣╥н2 {
 			}
 		}
 		
-		// ╦П╣Г ╠в╥Люг ╟╙юл ╣©юого╦И false, ╟╙юл ╣©юогоаЖ ╬йю╦╦И true
+		// О©╫О©╫О©╫ О©╫в╥О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╦О©╫ false, О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ true
 		Set<Integer> set = new HashSet<Integer>();
 		for(int i=1; i<=v; i++) {
 			if (groups[i] != 10000000) 
@@ -65,9 +66,9 @@ public class ad_╣╣╫ц╦╕©╛╟Аго╢б╣╣╥н2 {
 		for(int t=1; t<=T; t++) {
 			int v = sc.nextInt();
 			int e = sc.nextInt();
-			int road[][] = new int[e+1][e+1]; // x --> y, y --> x ╦П╣н юЗюЕго╠Б ю╖гь 2бВ©Ь ╧Х©╜ ╩Г©К
+			int road[][] = new int[e+1][e+1]; // x --> y, y --> x О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╠О©╫ О©╫О©╫О©╫О©╫ 2О©╫О©╫О©╫О©╫ О©╫Х©╜ О©╫О©╫О©╫
 			
-			// ©╛╟А ╣╣╥н ют╥б
+			// О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫т╥О©╫
 			for(int i=1; i<=e; i++) {
 				int x = sc.nextInt();
 				int y = sc.nextInt();
