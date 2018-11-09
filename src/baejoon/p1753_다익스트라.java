@@ -104,15 +104,14 @@ class Element implements Comparable<Element> {
     int node;
     int dist;
 
-    Element(int node, int dist) {
-
+    Element(int node, int dist)
+    {
         this.node = node;
         this.dist = dist;
     }
 
     @Override
     public int compareTo(Element o) {
-
         return Integer.compare(this.dist, o.dist);
     }
 }
