@@ -106,7 +106,7 @@ class Element implements Comparable<Element> {
 
     Element(int node, int dist)
     {
-        this.node = node;
+        this.node = node; 
         this.dist = dist;
     }
 

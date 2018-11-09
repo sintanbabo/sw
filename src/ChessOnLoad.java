@@ -46,7 +46,7 @@ public class ChessOnLoad {
 			M = sc.nextInt();
 			K = sc.nextInt();
 			
-			// result ¸¸µé±â
+			// result ï¿½ï¿½ï¿½ï¿½ï¿½
 			result = new BigInteger[N][M];
 			for (int x=0; x<N; x++) {
 				for (int y=0; y<M; y++) {
@@ -54,7 +54,7 @@ public class ChessOnLoad {
 				}
 			}
 						
-			// ÇÔÁ¤ ¸¸µé±â
+			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 			for(int j=0;j<K;j++) {
 				int x = 0, y = 0;
 				x = sc.nextInt();
@@ -63,18 +63,18 @@ public class ChessOnLoad {
 			}
 			
 			result[0][0] = BigInteger.valueOf(1);
-			// Ã¹ ¹øÀç ¼¼·Î¿­ 1·Î Ã¤¿ì±â
+			// Ã¹ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ 1ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½
 			for (int z=1; z<N; z++) {
 				if (result[z-1][0] == BigInteger.valueOf(0)) result[z][0] = BigInteger.valueOf(0);
 				else if (result[z][0] == BigInteger.valueOf(-1)) result[z][0] = BigInteger.valueOf(1);
 			}
-			// Ã¹ ¹øÂ° °¡·Î¿­ 1·Î Ã¤¿ì±â
+			// Ã¹ ï¿½ï¿½Â° ï¿½ï¿½ï¿½Î¿ï¿½ 1ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½
 			for (int z=1; z<M; z++) {
 				if (result[0][z-1] == BigInteger.valueOf(0)) result[0][z] = BigInteger.valueOf(0);
 				else if (result[0][z] == BigInteger.valueOf(-1)) result[0][z] = BigInteger.valueOf(1);
 			}
 			
-			// ³ª¸ÓÁö °è»êÇÏ±â
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
 			for (int x=1; x<N; x++) {
 				for (int y=1; y<M; y++) {
 					if (result[x][y] == BigInteger.valueOf(-1))
