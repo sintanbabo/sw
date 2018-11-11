@@ -9,7 +9,21 @@ import java.util.StringTokenizer;
 /**
  * BOJ#1753 최단경로
  * https://www.acmicpc.net/problem/1753
+ *
  */
+
+/*
+5 6
+1
+5 1 1
+1 2 2
+1 3 3
+2 3 4
+2 4 5
+3 4 6
+
+*/
+
 
 public class p1753_다익스트라 {
 
