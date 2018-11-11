@@ -33,7 +33,7 @@ public class p1753_다익스트라 {
 
         int V; // 정점의 개수 <= 20,000
         int E; // 간선의 개수 <= 300,000
-        ArrayList<ArrayList<Integer>> W = new ArrayList<>();
+        ArrayList<ArrayList<Element>> W = new ArrayList<>();
         int[] dist;
         int startNode;
 
@@ -63,7 +63,9 @@ public class p1753_다익스트라 {
             int b = Integer.parseInt(st.nextToken());
             int w = Integer.parseInt(st.nextToken());
 
-            W.get(a).add(b * 11 + w);
+            Element temp = new Element(b,w);
+            
+            W.get(a).add(temp);
         }
 
         dijkstra(startNode, V, W, dist);
@@ -78,7 +80,7 @@ public class p1753_다익스트라 {
         br.close();
     }
 
-    static void dijkstra(int src, int V, ArrayList<ArrayList<Integer>> W, int[] dist) {
+    static void dijkstra(int src, int V, ArrayList<ArrayList<Element>> W, int[] dist) {
 
         PriorityQueue<Element> pq = new PriorityQueue<>();
 
@@ -98,10 +100,10 @@ public class p1753_다익스트라 {
                 continue;
             }
 
-            for (int x : W.get(here)) {
+            for (Element x : W.get(here)) {
 
-                int adjNode = x / 11;
-                int weight = x % 11;
+                int adjNode = x.node;
+                int weight = x.dist;
 
                 if (dist[adjNode] > dist[here] + weight) {
 
