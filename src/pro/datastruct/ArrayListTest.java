@@ -67,8 +67,7 @@ public class ArrayListTest {
 		
 		if (string.contains("abcdefgh")) {
 			System.out.println("find abcdefg");
+			System.out.println("find : " + string.get(string.indexOf("abcdefgh")));
 		}
-		
-		System.out.println("find : " + string.get(string.indexOf("abcdefgh")));
 	}
 }
