@@ -5,6 +5,16 @@ import java.util.Iterator;
 
 public class ArrayListTest {
 	public static void main(String[] args) {
+		
+		ArrayList ar[] = new ArrayList[10];
+		
+		for(int i=0; i<10; i++) {
+			ar[i] = new ArrayList<Integer>();
+		}
+		
+		ar[1].add(1);
+		ar[2].add(1);
+		
 		ArrayList<String[]> al = new ArrayList<String[]>();
 		
 		String a[] = {"1","2","3"};
