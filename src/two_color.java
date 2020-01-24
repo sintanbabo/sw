@@ -15,7 +15,6 @@ public class two_color {
 		int[][] graph = new int[V][V];
 		int[] result = new int[V];
 		
-		// 각각의 연결 경로값 입력
 		for(int i=0; i<E; i++) {
 			x = sc.nextInt();
 			y = sc.nextInt();
@@ -59,7 +58,5 @@ public class two_color {
 		
 		System.out.println("count : " + nResult);
 		System.out.println(sResult);
-		
 	}
-
 }
